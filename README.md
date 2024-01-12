@@ -24,6 +24,8 @@ CREATE TABLE Typ_Dokumentu_tożsamości (
 	PRIMARY KEY (DokumentID)
 );
 ```
+#### Tabela Użytkownicy
+```sql
 CREATE TABLE Użytkownicy (
 	UżytkownikID int NOT NULL,
 	Imię nvarchar(70) NOT NULL,
@@ -38,20 +40,26 @@ CREATE TABLE Użytkownicy (
 	PRIMARY KEY (UżytkownikID), 
 	FOREIGN KEY (DokumentTożsamości) REFERENCES Typ_Dokumentu_tożsamości(DokumentID)
 );
-
+```
+#### Tabela Typ_Konta
+```sql
 CREATE TABLE Typ_Konta (
 	TypKontaID int NOT NULL,
 	Nazwa nvarchar(30) NOT NULL,
 	PRIMARY KEY (TypKontaID)
 );
-
+```
+#### Tabela Waluty
+```sql
 CREATE TABLE Waluty (
 	WalutaID int NOT NULL,
 	Nazwa nvarchar(30) NOT NULL,
 	Symbol varchar(3) NOT NULL,
 	PRIMARY KEY (WalutaID)
 );
-
+```
+#### Tabela Konta
+```sql
 CREATE TABLE Konta (
 	KontoID int NOT NULL,
 	ID_użytkownika int NOT NULL,
@@ -65,19 +73,25 @@ CREATE TABLE Konta (
 	FOREIGN KEY (TypKonta) REFERENCES Typ_Konta(TypKontaID),
 	FOREIGN KEY (Waluta) REFERENCES Waluty(WalutaID)
 );
-
+```
+#### Tabela Typ_transakcji
+```sql
 CREATE TABLE Typ_transakcji (
 	TypTransakcjiID int NOT NULL,
 	Nazwa nvarchar(30) NOT NULL,
 	PRIMARY KEY (TypTransakcjiID)
 );
-
+```
+#### Tabela Status_logowania
+```sql
 CREATE TABLE Status_logowania (
 	StatusID int NOT NULL,
 	Nazwa nvarchar(70),
 	PRIMARY KEY (StatusID)
 );
-
+```
+#### Tabela Historia_logowania
+```sql
 CREATE TABLE Historia_logowania (
 	ID int NOT NULL,
 	ID_użytkownika int NOT NULL,
@@ -89,7 +103,9 @@ CREATE TABLE Historia_logowania (
 	FOREIGN KEY (ID_użytkownika) REFERENCES Użytkownicy(UżytkownikID),
 	FOREIGN KEY (StatusLogowania) REFERENCES Status_logowania(StatusID)
 );
-
+```
+#### Tabela Transakcje
+```sql
 CREATE TABLE Transakcje (
 	TransakcjaID int NOT NULL,
 	LogowanieID int,
@@ -107,6 +123,7 @@ CREATE TABLE Transakcje (
 	FOREIGN KEY (RachunekDocelowy) REFERENCES Konta(KontoID),
 	FOREIGN KEY (LogowanieID) REFERENCES Historia_logowania(ID)
 );
+```
 
 ## Opis skryptów
 
