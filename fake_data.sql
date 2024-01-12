@@ -1,3 +1,5 @@
+USE Kossowska_Paulina_329526_projekt2;
+
 INSERT INTO Typ_Dokumentu_to¿samoœci (DokumentID, Nazwa) VALUES
 	(1, 'Dowód osobisty'),
 	(2, 'Paszport'),
