@@ -10,3 +10,16 @@ Zgodnie z treścią zadania programistycznego przygotowałam projekt bazy danych
 2. Konta - przechowuje listę kont bankowych użytkowników.
 3. Transakcje - służy do śledzenia wykonywanych operacji finansowych i ich szczegółów.
 4. Historia_logowania - zawiera informacje dotyczące szczegółów logowań poszczególnych użytkowników na swoich kontach bankowych lub do bankomatów, np. w celu wykonania pewnej transakcji finansowej (wpłaty/wypłaty gotówki).
+
+## Opis skryptów
+
+### create_database.sql
+
+Tworzy bazę danych o opisanej strukturze.
+
+###  fake_data.sql
+
+Wstawia dane do wszystkich tabel bazy danych.
+
+
+##
