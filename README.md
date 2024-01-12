@@ -1,6 +1,6 @@
 Zadanie programistyczne 2 na laboratorium Bazy Danych
 
-Baza Danych
+# Baza Danych
 
 Zgodnie z treścią zadania programistycznego przygotowałam projekt bazy danych Systemu Finansowego.
 
