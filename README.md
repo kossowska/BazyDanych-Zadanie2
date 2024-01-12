@@ -21,5 +21,14 @@ Tworzy bazę danych o opisanej strukturze.
 
 Wstawia dane do wszystkich tabel bazy danych.
 
+## transaction.sql
 
-##
+Zawiera 
+
+## indexes.sql
+
+Tworzy niezbędne indeksy w bazie danych.
+
+## procedure.sql
+
+Zawiera procedurę, która zwraca listę bankomatów z konkretną, dzienną sumą wpłat i wypłat gotówki.
