@@ -1,3 +1,5 @@
+-- USE Kossowska_Paulina_329526_projekt2;
+
 CREATE PROCEDURE SumaWp³atWyp³at
 	@KwotaWyp³at MONEY,
 	@KwotaWp³at MONEY

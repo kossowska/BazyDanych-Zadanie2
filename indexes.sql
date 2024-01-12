@@ -1,3 +1,5 @@
+USE Kossowska_Paulina_329526_projekt2;
+
 -- Indeks na tabeli Konta
 CREATE INDEX index_nr_rachunku ON Konta (NumerRachunku);
 
