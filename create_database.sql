@@ -1,5 +1,5 @@
 CREATE DATABASE Kossowska_Paulina_329526_projekt2;
-
+go
 USE Kossowska_Paulina_329526_projekt2;
 
 CREATE TABLE Typ_Dokumentu_to¿samoœci (
